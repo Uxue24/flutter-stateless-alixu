@@ -47,12 +47,12 @@ Cada exercici es troba dins del directori `lib/` com un fitxer separat:
 ## Resultat visual
 A continuació es mostren captures o descripcions visuals dels exercicis (simulació en dispositiu Android):
 
-- Ex1 → Pantalla amb text “Hello World!”
-- Ex2 → Pantalla de benvinguda amb títol, subtítol i botons “Login” i “Register”
-- Ex3 → Text i imatge carregada des d’una URL
-- Ex4 → Fitxa de contacte amb foto de perfil i dades (nom, correu, telèfon)
-- Ex5 → Llista vertical de missatges amb autor i cos
-- Ex6 → Llista amb barra de navegació inferior (icones de missatges, contactes i configuració)
+- Ex1: Pantalla amb text “Hello World!”
+- Ex2: Pantalla de benvinguda amb títol, subtítol i botons “Login” i “Register”
+- Ex3: Text i imatge carregada des d’una URL
+- Ex4: Fitxa de contacte amb foto de perfil i dades (nom, correu, telèfon)
+- Ex5: Llista vertical de missatges amb autor i cos
+- Ex6: Llista amb barra de navegació inferior (icones de missatges, contactes i configuració)
 
 
 ## Execució
