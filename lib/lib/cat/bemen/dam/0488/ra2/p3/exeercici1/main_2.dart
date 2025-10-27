@@ -23,9 +23,10 @@ class WelcomePage extends StatelessWidget {//WelcomePage también es un Stateles
   Widget build(BuildContext context) {
     return Scaffold( //Usa Scaffold como contenedor principal (estructura básica de una pantalla en Material Design).
       body: Center( // Centra el contingut
-        child: Column( // Columna para organizar los widgets verticalmente
-          mainAxisAlignment: MainAxisAlignment.center, // Centra els widgets verticalment
+        child: Column( // Columna para organizar los widgets
+          mainAxisAlignment: MainAxisAlignment.center, // Centra los widgets verticalment
           children: [ 
+            //Muestra el texto “Welcome!”, grande y en negrita.
             const Text( 
               'Welcome!', 
               style: TextStyle( 
@@ -33,56 +34,58 @@ class WelcomePage extends StatelessWidget {//WelcomePage también es un Stateles
                 fontWeight: FontWeight.bold, 
               ),
             ),
-            const SizedBox(height: 10), // Espai 
+            //esto es el Texto secundario, color gris y más pequeño.
+            const SizedBox(height: 10), // espacio
             const Text(
               'Start learning now', 
               style: TextStyle( 
                 fontSize: 20,
-                color: Colors.grey, // Color gris per al subtítol
+                color: Colors.grey, // Color gris subtitulo
               ),
             ),
-            const SizedBox(height: 40), // Espai abans dels botons
+            //SizedBox se usa para añadir espacios verticales entre widgets
+            const SizedBox(height: 40),
 
-            // Botó Login
+            // Botón de Login
             ElevatedButton( 
-              onPressed: () {
+              onPressed: () {//define la acción al pulsar (vacía de momento).
                
               },
-              style: ElevatedButton.styleFrom( // Estil del botó
-                backgroundColor: Colors.blue, // Color de fons blau
+              style: ElevatedButton.styleFrom( // Estilo del botón.
+                backgroundColor: Colors.blue, // fondo de color azul
                 shape: RoundedRectangleBorder( 
-                  borderRadius: BorderRadius.circular(20), // Cantons arrodonits
+                  borderRadius: BorderRadius.circular(20), // bordes redondeados
                 ),
-                padding: const EdgeInsets.symmetric( // Padding intern
+                padding: const EdgeInsets.symmetric( // espaciado dentro del boton
                   horizontal: 50, // Padding horitzontal
                   vertical: 15, // Padding vertical
                 ),
               ),
               child: const Text( 
                 'Login', 
-                style: TextStyle(fontSize: 18), // Estil del text del botó
+                style: TextStyle(fontSize: 18), // Estilo de texto del boton
               ),
             ),
-            const SizedBox(height: 20), // Espai entre els botons
+            const SizedBox(height: 20),
 
-            // Botó Register
+            // Botón de registro:
             ElevatedButton(
               onPressed: () {
-                
+                //vacio de momento
               },
-              style: ElevatedButton.styleFrom( // Estil del botó
-                backgroundColor: Colors.blue, // Color de fons blau
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
                 shape: RoundedRectangleBorder( 
-                  borderRadius: BorderRadius.circular(20), // Cantons arrodonits
+                  borderRadius: BorderRadius.circular(20),
                 ),
-                padding: const EdgeInsets.symmetric( // Padding intern
+                padding: const EdgeInsets.symmetric( // Padding interno
                   horizontal: 50, // Padding horitzontal 
                   vertical: 15, // Padding vertical
                 ),
               ),
               child: const Text(  
                 'Register',
-                style: TextStyle(fontSize: 18), // Estil del text del botó
+                style: TextStyle(fontSize: 18), //Estilo de texto del boton
               ),
             ),
           ],
