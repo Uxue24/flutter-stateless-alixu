@@ -39,7 +39,7 @@ class ResourcePage extends StatelessWidget {
                 const SizedBox(height: 10),
                 // La imatge centrada respecte al text
                 Align(
-                  alignment: Alignment.centerLeft, // pots canviar a center per centrar exactament
+                  alignment: Alignment.centerLeft, 
                   child: Image.network(
                     'https://i.imgur.com/8Km9tLL.jpg', // URL de la imatge
                     width: 150,
