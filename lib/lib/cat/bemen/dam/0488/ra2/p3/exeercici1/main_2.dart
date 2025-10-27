@@ -1,29 +1,29 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';//Importa la librería “material.dart”, que contiene todos los widgets y estilos del Material Design (el estilo visual de Google).
 
-void main() {
-  runApp(const MyApp()); // Inicia l'aplicació amb el widget MyApp
-}
+void main() {//función que se ejecuta primero en toda app Flutter.
+  runApp(const MyApp()); //inicia la aplicación y recibe el widget raíz: MyApp.
+}//const indica que el widget no cambiará en tiempo de ejecución.
 
-class MyApp extends StatelessWidget { 
-  const MyApp({super.key}); // Constructor
+class MyApp extends StatelessWidget { //Definimos un widget personalizado llamado HelloWorldApp. Hereda de StatelessWidget, lo que significa que su contenido no cambia mientras la app está en ejecución (no tiene “estado”).
+  const MyApp({super.key}); //el constructor simplemente inicializa la clase y permite que Flutter gestione mejor el widget en memoria.
 
   @override
   Widget build(BuildContext context) { // Mètode build
     return MaterialApp( // Widget MaterialApp
       title: ' App Ex2', // Títol de l'aplicació
-      home: const WelcomePage(), // Pantalla principal
+      home: const WelcomePage(), //Establece la pantalla principal (home), en este caso el widget WelcomePage.
     );
   }
 }
 
-class WelcomePage extends StatelessWidget {
+class WelcomePage extends StatelessWidget {//WelcomePage también es un StatelessWidget, por tanto su contenido es fijo.
   const WelcomePage({super.key}); // Constructor
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold( // Widget Scaffold
+    return Scaffold( //Usa Scaffold como contenedor principal (estructura básica de una pantalla en Material Design).
       body: Center( // Centra el contingut
-        child: Column( // Columna per organitzar els widgets verticalment
+        child: Column( // Columna para organizar los widgets verticalmente
           mainAxisAlignment: MainAxisAlignment.center, // Centra els widgets verticalment
           children: [ 
             const Text( 
