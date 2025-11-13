@@ -1,5 +1,7 @@
-
+import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart'; // ← para los SVG
+import 'package:fluttertoast/fluttertoast.dart'; // ← para el toast
 
 void main() {
   runApp(const DiceApp());
@@ -16,7 +18,7 @@ class DiceApp extends StatelessWidget {
       home: const DicePage(),
       debugShowCheckedModeBanner: false,
     );
-  }
+  } 
 }
 
 class DicePage extends StatefulWidget {
@@ -38,7 +40,7 @@ class _DicePageState extends State<DicePage> {
 
     if (leftDice == 6 && rightDice == 6) {
       Fluttertoast.showToast(
-        msg: "JACKPOT!",
+        msg: "🎉 JACKPOT!",
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         backgroundColor: Colors.green,
@@ -81,7 +83,8 @@ class _DicePageState extends State<DicePage> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blueGrey[700],
                 padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                textStyle: const TextStyle(
+                    fontSize: 20, fontWeight: FontWeight.bold),
               ),
               child: const Text("ROLL THE DICE"),
             ),
