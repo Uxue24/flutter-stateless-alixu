@@ -13,7 +13,7 @@ class SecretNumberApp extends StatelessWidget {
       home: SecretNumberPage(),
       debugShowCheckedModeBanner: false,
     );
-  }
+  } 
 }
 
 class SecretNumberPage extends StatefulWidget {
