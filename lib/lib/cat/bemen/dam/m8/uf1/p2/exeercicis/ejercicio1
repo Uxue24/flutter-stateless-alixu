@@ -15,7 +15,7 @@ class _GoodMorningAppState extends State<GoodMorningApp> {
   String greeting = "Good ?!";
 
   void sayMorning() {
-    setState(() {
+    setState(() { 
       greeting = "Good Morning!";
     });
   }
